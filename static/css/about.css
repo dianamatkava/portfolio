@@ -1,0 +1,158 @@
+.portfolio_block {
+    display: flex;
+}
+.brief_content h1 {
+    font-size: 16px;
+    color: #f5f6f7;
+}
+.brief_content {
+    width: 40%;
+    padding: 5% 2%;
+    font-weight: 100;
+}
+.brief_content div, img, .skills > ul > li {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.brief_content div > img {
+    border-radius: 50%;
+    width: 400px;
+    height: 300px;
+}
+.brief_content div {
+    margin-bottom: 15%;
+}
+.brief_content div h2 {
+    font-size: 24px;
+    margin-bottom: 8%;
+}
+.portfolio_block .portfolio_content {
+    width: 75%;
+    padding: 5% 2%;
+    margin-left: 5%;
+}
+.link p a, .link p span {
+    color: #e1e5ed;
+}
+.skills ul li, .skills ul li a {
+    color: #f5f6f7;
+    font-size: 28px;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.skills {
+    margin-top: 50px;
+}
+.border {
+    margin-right: 5px;
+}
+.portfolio_content > section {
+    max-width: 800px;
+}
+.portfolio_content h2 {
+    margin-top: 5%;
+}
+.portfolio_content h2, h3 {
+    text-align: left;
+}
+.portfolio_content h3 {
+    margin-top: 2%;
+}
+.portfolio_content > section {
+    margin: 40px 20px;
+}
+.portfolio_content > section > p > a, .portfolio_content > section > h3 > a {
+    color: black;
+    text-decoration: underline;
+}
+.skills .languages {
+    width: 250px;
+    margin: auto;
+}
+.skills .languages li {
+    text-align: left;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  
+  p > a {
+      color: #f50;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  h2 {
+    color: #f50;
+    letter-spacing: 8px;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  h1, h2, h4 {
+    text-align: center;
+  }
+  p {
+      display: block;
+      margin: 20px 0;
+  }
+  b {
+      color: rgb(16, 70, 70);
+  }
+  .content_block {
+      margin: auto 10%;
+      
+  }
+  
+  code {
+      width: fit-content;
+      font-family: monospace;
+      font-size: 14px;
+      background-color: #4c5670;
+  }
+  p > code, .container > code, .border {
+      display: inline-block;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: #f6f9ff;
+      color: #0b1528;
+  }
+  
+  pre > code > b {
+     color: #f50;
+     font-size: 16px;
+  }
+  .container > b {
+      color: #f50;
+  }
+
+  .grey {
+    color: grey;
+  }
+
+
+@media (max-width: 660px) {
+    .brief_content {
+        display: none;
+    }
+    p {
+        min-width: 300px;
+    }
+}
+  

@@ -1,0 +1,9 @@
+npm install
+pip install -r requirements.txt
+flask --app main run
+
+
+
+To manage CSS using Tailwind run:
+
+npx tailwindcss -i main.css -o tailwind.css --watch

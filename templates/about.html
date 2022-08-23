@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="about.css">
+    <title>Home</title>
+</head>
+    
+<body class="max-w-6xl mx-auto" >
+
+    <header>
+
+        <div class="relative bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 mr-9">
+                <div class="flex justify-between items-center py-4 xs:justify-start md:space-x-10">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="#">
+                        <img class="h8 w-auto sm:h-10 h-7 w-18" src="./static/img/logo.png" alt="Logo">
+                    </a>
+                    </div>
+                        <nav class="hidden md:flex space-x-10">
+                            <a href="#" class="hover:text-gray-700 hover:border-violet-300 text-base font-slim border-b-2 border-violet-800 leading-7"> Home </a>
+                            <a href="#" class="hover:text-gray-700 hover:border-violet-300 text-base font-slim border-b-2 border-white leading-7"> About </a>
+                            <a href="#" class="hover:text-gray-700 hover:border-violet-300 text-base font-slim border-b-2 border-white leading-7"> Contact </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    </header>
+
+    <div class="menu-icon">
+        <input type="checkbox" id="nav-control" class="nav-control" >
+        <label for="nav-control" class="toggle-button">
+            <div class="wolverine">
+                <div class="claws"></div> <span>menu</span>
+            </div>
+        </label>
+        <nav class="navigation">
+
+            <h1><a href="#">Home</a></h1>
+            <h1><a href="#/about">About</a></h1>
+            <h1><a href="#">Contact</a></h1>
+        
+        </nav>
+    
+    
+
+    <div class="relative">
+        <div class="mx-auto">
+
+                           
+            <div class="portfolio_block">
+
+                <div class="brief_content bg-slate-800">
+                    <div><h1 class='text-uppercase'>Diana Matkava</h1></div>
+                    <div><h2>Fullstack Developer</h2></div>
+                    <div class="img"><img src="./static/img/girl.jpg" alt="My Photo"></div>
+                    <div class="skills"><h2>Skills:</h2>
+                        <ul>
+                            <li><span class='border'>Python</span><span class='border'>Django</span><span class='border'>Flask</span></li>
+                            <li><span class='border'>DRM</span> <span class='border'>REST API</span> <span class='border'>GraphQl</span> </li>
+                            <li><span class='border'>JavaScript</span><span class='border'>TypeScript</span><span class='border'>Angular</span></li>
+                            <li><span class='border'>HTML</span> <span class='border'>CSS</span> <span class='border'>Sass</span> </li>
+                            <li><span class='border'>SQL</span><span class='border'>Postgres</span><span class='border'>MySQL</span></li>
+                            <li><span class='border'>GIT</span><span class='border'>Docker</span></li>
+                            <li> <span class='border'>Bitbucket</span><span class='border'>GitHub</span><span class='border'>GitLab</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skills">
+                        <h2>Certifications</h2>
+                        <ul class='list-group'>
+                            <a class='text-decoration-none list-item' href="{{url_for('static', filename='doc/stepik-certificate.pdf')}}" target="_blank"><li>Python Programming</li></a>
+                            <a class='text-decoration-none list-item' href="#"><li>Python Programming (HSE)</li></a>
+                            <a class='text-decoration-none list-item' href="https://www.efset.org/cert/xVrnnL" target="_blank"><li>EF SET Certificate 53/100 (B2 Upper Intermediate)</li></a>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <h2>Languages</h2>
+                        <ul class="languages">
+                            <li><span class='border'>English</span> Intermediate</li>
+                            <li><span class='border'>German</span> Beginner</li>
+                            <li><span class='border'>Ukraine</span> Native</li>
+                        </ul>
+                    </div>
+                    <div class="link"><h2>Contacts</h2>
+                        <p><span class="grey icon-linkedin-1"><a href="https://www.linkedin.com/in/diana-matkava-7b7302227/" target="_blank">LinkedIn</a></span><br><br>
+                            <span class="grey icon-github-circled-1"><a href="https://github.com/dianaGera" target="_blank">GitHub</a></span><br><br>
+                            <span class="grey icon-instagram"><a href="https://www.instagram.com/diana_gera_/" target="_blank">Instagram</a></span><br><br>
+                            <span class="grey icon-google-1"><a href="mailto:dianamatkava@online.ua" target="_blank">dianamatkava@gmail.com</a></span></p>
+                    </div>
+                </div>
+                <div class="portfolio_content">
+                    <h2>About Me</h2>
+                    <section>
+                            
+                            <p><span class="grey">Location: Kharkov, Ukraine</span><br>
+                            <span class="grey">Age: 22</span></p>
+                    
+              
+                        <p>I'm a Fullstack Developer specialized in writing server side web application logic, develop, debug and implement application projects, automation and creating API's using Django, Flask (REST API, GraphQL) web framework as part of backend side. 
+                          <br><br>
+                          I have strong knowledge in JavaScript, TypeScript & Angular, CSS frameworks like Bootstrap4/5 and Twilight, and actively use preprocessor Sass
+                          <br><br>
+                          Have knowledge on version control system GIT, CI/CD, Atlassian infrastructure and familiar with Docker<br><br>
+                          Have deep knowledge in creating SQL queries
+                        </p>
+                        <p><span class="grey icon-linkedin-1"><a href="https://www.linkedin.com/in/diana-matkava-7b7302227/" target="_blank">LinkedIn</a></span><br>
+                            <span class="grey icon-github-circled-1"><a href="https://github.com/dianaGera" target="_blank">GitHub</a></span><br>
+                            <span class="grey icon-instagram"><a href="https://www.instagram.com/diana_gera_/" target="_blank">Instagram</a></span><br>
+                            <span class="grey icon-google-1"><a href="mailto:dianamatkava@online.ua" target="_blank">dianamatkava@online.ua</a></span></p>
+                    </section>
+              
+                    <h2>Work Experience</h2>
+                    <section>
+                        <h3>HARDSKILLS</h3>
+                        <p>Software Developer<br>
+                            <span class="grey">May 2022 - Present</span><br>
+                            <span class="grey">Berlin, Germany</span></p>
+                    </section>
+                    <section>
+                        <h3>RockLab</h3>
+                        <p>Python Backend Developer<br>
+                            <span class="grey">Dec 2021 - Apr 2022 (5 month)</span><br>
+                            <span class="grey">Kharkov, Ukraine</span></p>
+                    </section>
+              
+              
+                    <h2>Professional Education</h2>
+                    <section>
+                        <h3>Higher School of Economics</h3>
+                        <p><a href="https://www.coursera.org/learn/python-osnovy-programmirovaniya" target="_blank">Python Programming Course</a><br>
+                            <span class="grey">May 2021 - Jul 2021</span><br>
+                            <span class="grey">Grade: 92</span></p>
+                        <p>With the help of this course, I learned the basics of designing the Python language, learned how to handle the Python standard library, and got acquainted with the basics of various programming paradigms: procedural, functional, and object-oriented programming.</p>
+                    </section>
+                    <section>
+                        <h3>Bioinformatics Institute</h3>
+                        <p><a href="https://stepik.org/course/512/syllabus" target="_blank">Python Programming Course</a><br>
+                            <span class="grey">Mar 2021 - May 2021</span><br>
+                            <span class="grey">Grade: 98</span></p>
+                        <p>With the help of this course, I got acquainted with the basic concepts of programming. Many practical tasks related to the creation of algorithms, the use of basic methods, have been completed. Studied Python syntax, working with files. With the help of this course, I got acquainted with the basic concepts of programming. Many practical tasks related to the creation of algorithms, the use of basic methods, have been completed. Studied Python syntax, working with files</p>
+                    </section>
+                    <section>
+                        <h3>University of Michigan</h3>
+                        <p><a href="https://www.coursera.org/learn/django-database-web-apps?=" target="_blank">Web Application Technologies and Django</a><br>
+                            <span class="grey">Jun 2021 - Jul 2021</span></p>
+                        <p>In this course, I learned the basic structure of a web application and how a web browser interacts with a web server. I've become familiar with the Hypertext Transfer Protocol (HTTP) request/response cycle, including GET/POST/Redirect. Studied basic HTML tags, Django application structure. Understanding the concept of the Model-View-Controller (MVC) pattern for web applications and how it relates to Django.</p>
+                    </section>
+                    <section>
+                        <h3>The Johns Hopkins University</h3>
+                        <p><a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers" target="_blank">HTML, CSS, and Javascript for Web Developers</a><br>
+                            <span class="grey">Jun 2021 - Jul 2021</span></p>
+                        <p>Learned basic of HTML and CSS rules.</p>
+                    </section>
+              
+                   
+              
+                    <h2>Education</h2>
+                    <section>
+                        <h3>Kharkiv National University of Economics</h3>
+                        <p>Faculty of International Economics<br>
+                            <span class="grey">Sep 2019 - Feb 2022</span><br>
+                            <span class="grey">Bachelor</span></p>
+                    </section>
+              
+                    <h2>Certifications</h2>
+                    <section>
+                        <h3><a href="{{url_for('static', filename='doc/stepik-certificate.pdf')}}" target="_blank">Python Programming Certificate</a></h3>
+                        <p>Bioinformatics Institute<br>
+                            <span class="grey">May 2021</span><br>
+                    </section>
+                    <section>
+                        <h3><a href='#'>Python Programming Certificate</a> </h3>
+                        <p>Higher School of Economics<br>
+                            <span class="grey">Jun 2021</span><br>
+                    </section>
+                    <section>
+                        <h3><a href="https://www.efset.org/cert/xVrnnL" target="_blank">EF SET Certificate</a></h3>
+                        <p>53/100 (B2 Upper Intermediate)<br>
+                            <span class="grey">Dec 2021</span><br>
+                    </section>
+                </div>
+              </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="relative">
+            <div class="main-bg-slate container mx-auto bg-slate-700 rounded-md pt-9" style="height: 150px">
+                <div class="flex w-fit m-auto main-icons">
+                    <a href="" class="text-center m-4"><i class="fa-brands fa-github text-white text-[28px]"></i></a>
+                    <a href="" class="text-center m-4"><i class="fa-brands fa-linkedin text-white text-[28px]"></i></a>
+                    <a href="" class="text-center m-4"><i class="fa-brands fa-twitter text-white text-[28px]"></i></a>
+                    <a href="" class="text-center m-4"><i class="fa-brands fa-instagram text-white text-[28px]"></i></a>
+                </div>
+                <p class="uppercase text-white font-thin text-center">PLEASE FOLLOW ME ONSOCIAL MEDIASO WE CAN KEEP IN TOUCH.</p>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/c9a19db785.js" crossorigin="anonymous"></script>
+</html>
