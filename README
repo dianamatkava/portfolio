@@ -17,4 +17,4 @@ flask --app main run
 
 
 To manage CSS using Tailwind run:
-npx tailwindcss -i main.css -o tailwind.css --watch
+npx tailwindcss -i static/css/main.css -o static/css/tailwind.css --watch
