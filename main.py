@@ -40,7 +40,7 @@ def send_mail(current_url):
         f"MSG from {sender_name} (using personal web-site)", 
         sender=sender_email, recipients=['diana.matkava.pr@gmail.com'])
     msg.body = message
-    # mail.send(msg)
+    mail.send(msg)
     return redirect(url_for(current_url)+'#contact')
 
 
