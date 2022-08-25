@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, url_for, redirect
 from flask_mail import Mail, Message
 import os
 from distutils.util import strtobool
@@ -20,18 +20,28 @@ mail = Mail(app)
 
 @app.route('/')
 def home():
-    # print(app.config['MAIL_USE_SSL'], app.config['MAIL_USE_TLS'], 'iiiiiiiiiiiiiiiii')
-    # msg = Message("TEST subject", sender='dianamatkava@gmail.com', recipients=['dianamatkava7@gmail.com'])
-    # msg.body = 'TEST body'
-    # mail.send(msg)
-    return render_template('main.html', **{'title': 'Home'})
+    return render_template('main.html', **{'title': 'Home', 'url_name': 'home'})
 
 
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html', **{'title': 'Contact'})
+    return render_template('contact.html', **{'title': 'Contact', 'url_name': 'contact'})
 
+
+@app.route('/<current_url>/send-mail', methods=['POST'])
+def send_mail(current_url):
+    print(request.url)
+    sender_name = request.form['name']
+    sender_email = request.form['email']
+    message = request.form['message']
+    
+    msg = Message(
+        f"MSG from {sender_name} (using personal web-site)", 
+        sender=sender_email, recipients=['diana.matkava.pr@gmail.com'])
+    msg.body = message
+    # mail.send(msg)
+    return redirect(url_for(current_url)+'#contact')
 
 
 @app.route('/about')

@@ -4,14 +4,10 @@
 
 
 @font-face {
-  font-family: "Roboto";
-  src: url("./static/fonts/Roboto-Thin.ttf") format('truetype');
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-Thin.ttf") format('truetype');
   font-weight: 100;
   font-style: normal;
-}
-
-h1 {
-  font-family: 'Roboto';
 }
 
 .code-style {

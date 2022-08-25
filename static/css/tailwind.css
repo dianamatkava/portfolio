@@ -124,7 +124,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Roboto, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -1129,7 +1129,7 @@ video {
 @font-face {
   font-family: "Roboto";
 
-  src: url("./static/fonts/Roboto-Thin.ttf") format('truetype');
+  src: url("../fonts/Roboto-Thin.ttf") format('truetype');
 
   font-weight: 100;
 

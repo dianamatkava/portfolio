@@ -1,12 +1,11 @@
 {% block contact %} 
-    <div class="flex items-center justify-start bg-white my-[100px]">
+    <div class="flex items-center justify-start bg-white my-[100px]" id='contact'>
         <div class="mx-auto w-full max-w-lg main-form">
             <h1 class="text-4xl font-medium text-center p-6">Contact with me</h1>
             <p class="text-center">Let's cooperate</p>
             
         
-            <form action="" class="mt-12 ">
-        
+            <form action="{{url_for('send_mail', current_url=url_name)}}" method='POST' class="mt-12">
                 <div class="m-auto main-form-block">
                 <div class="relative z-0 ">
                     <input type="text" name="name" class="main-form-item mt-3 peer block w-full appearance-none border-0 border-b border-gray-500 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" placeholder=" " />
@@ -21,7 +20,7 @@
                     <label class="absolute top-3 -z-10 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-blue-600 peer-focus:dark:text-blue-500">Your message</label>
                 </div>
                 </div>
-                <p class="mt-3 text-xs">Email me at dianamatkava@gmail.com or message here:</p>
+                <p class="mt-3 text-xs">Text me at diana.matkava.pr@gmail.com or message here:</p>
                 <button type="submit" class="mt-9 rounded-md bg-black px-10 py-2 text-white">Send Message</button>
             </form>
         </div>
