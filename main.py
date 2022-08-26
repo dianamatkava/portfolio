@@ -1,5 +1,4 @@
-from tkinter import E
-from flask import Flask, render_template, request, url_for, redirect
+from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 from flask_wtf.csrf import CSRFProtect
 from contact_form import ContactForm
