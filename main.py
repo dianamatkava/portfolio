@@ -1,13 +1,22 @@
+from tkinter import E
 from flask import Flask, render_template, request, url_for, redirect
 from flask_mail import Mail, Message
+from flask_wtf.csrf import CSRFProtect
+from contact_form import ContactForm
 import os
+import json
 from distutils.util import strtobool
 from dotenv import load_dotenv
+
 load_dotenv()
 
 
 app = Flask(__name__)
+csrf = CSRFProtect(app)
 
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+
+# SMTP config
 app.config['MAIL_SERVER']= os.getenv('MAIL_SERVER')
 app.config['MAIL_PORT'] = int(os.getenv('MAIL_PORT'))
 app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
@@ -18,31 +27,38 @@ app.config['MAIL_USE_SSL'] = strtobool(os.getenv('MAIL_USE_SSL'))
 
 mail = Mail(app)
 
-@app.route('/')
+
+@app.route('/', methods=['GET', 'POST'])
 def home():
-    return render_template('main.html', **{'title': 'Home', 'url_name': 'home'})
+    form = ContactForm()
+    return render_template('main.html', **{'title': 'Home', 'form': form})
 
 
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html', **{'title': 'Contact', 'url_name': 'contact'})
+    form = ContactForm()
+    return render_template('contact.html', **{'title': 'Contact', 'form': form})
 
 
-@app.route('/<current_url>/send-mail', methods=['POST'])
-def send_mail(current_url):
-    print(request.url)
-    sender_name = request.form['name']
-    sender_email = request.form['email']
-    message = request.form['message']
+
+
+@app.route('/send_mail', methods=['POST'])
+@csrf.exempt
+def send_mail():
+    form = ContactForm(**request.json)
+    if form.validate():
+        msg = Message(
+            f"MSG from {request.json['name']} (using personal web-site)", 
+            sender=request.json['email'], recipients=['diana.matkava.pr@gmail.com'])
+        msg.body = request.json['message']
+        mail.send(msg)
+        message = {'subbmit': 'Message was sent'}
+        
+    else: 
+        message = form.errors
+    return json.dumps(message, indent=4)
     
-    msg = Message(
-        f"MSG from {sender_name} (using personal web-site)", 
-        sender=sender_email, recipients=['diana.matkava.pr@gmail.com'])
-    msg.body = message
-    mail.send(msg)
-    return redirect(url_for(current_url)+'#contact')
-
 
 @app.route('/about')
 def about():
