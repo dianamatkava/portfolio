@@ -177,9 +177,13 @@ html {
   }
 
   .main-bg-slate {
-    height: 500px;
+    height: 400px;
     margin-top: 100px;
     margin-bottom: 70px;
+  }
+
+  .main-bg-slate > h2 {
+    padding-top: 170px!important;
   }
 
   p {
@@ -187,7 +191,7 @@ html {
   }
 
   .main-icons {
-    margin-top: -25px
+    /* margin-top: -25pxs */
   }
   
 }
