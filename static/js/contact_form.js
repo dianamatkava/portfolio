@@ -30,8 +30,10 @@ function onSendMessage() {
                 container_block.style.color = 'red';
                 container_block.style.fontSize = '9px';
                 container_block.appendChild( block_to_insert );
-                
-                window.setTimeout(function(){location.reload()},1500)
+
+                if (key == 'subbmit') {
+                    window.setTimeout(function(){location.reload()},1500);
+                }
             }
             
         },
