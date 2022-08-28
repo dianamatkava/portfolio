@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/tailwind.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='img/favicon.ico')}}">
     
     {% block style %} {% endblock %}
     <title>{{title}}</title>
@@ -24,7 +25,7 @@
                     </div>
                         <nav class="hidden md:flex space-x-10">
                             <a href="{{url_for('home')}}" class="hover:text-gray-700 hover:border-violet-300 text-base font-slim border-b-2 border-violet-800 leading-7"> Home </a>
-                            <a href="{{url_for('about')}}" class="hover:text-gray-700 hover:border-violet-300 text-base font-slim border-b-2 border-white leading-7"> About </a>
+                            <a href="{{url_for('about')}}" class="hover:text-gray-700 hover:border-violet-300 text-base font-slim border-b-2 border-white leading-7"> Portfolio </a>
                             <a href="{{url_for('contact')}}" class="hover:text-gray-700 hover:border-violet-300 text-base font-slim border-b-2 border-white leading-7"> Contact </a>
                         </nav>
                     </div>
@@ -58,7 +59,7 @@
                     <a href="https://twitter.com/DianaDassler" class="text-center m-4"><i class="fa-brands fa-twitter text-white text-[28px]"></i></a>
                     <a href="https://www.instagram.com/diana_gera_/" class="text-center m-4"><i class="fa-brands fa-instagram text-white text-[28px]"></i></a>
                 </div>
-                <p class="uppercase text-white font-thin text-center">PLEASE FOLLOW ME ON SOCIAL MEDIASO WE CAN KEEP IN TOUCH.</p>
+                <p class="uppercase text-white font-thin text-center">PLEASE FOLLOW ME ON SOCIAL MEDIA SO WE CAN KEEP IN TOUCH.</p>
             </div>
             
         </div>

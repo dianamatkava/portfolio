@@ -27,7 +27,11 @@ function onSendMessage() {
                 block_to_insert.className = 'text-sm text-red-700 font-base';
                 
                 container_block = document.getElementById(key);
+                container_block.style.color = 'red';
+                container_block.style.fontSize = '9px';
                 container_block.appendChild( block_to_insert );
+                
+                window.setTimeout(function(){location.reload()},1500)
             }
             
         },
@@ -38,7 +42,6 @@ function onSendMessage() {
             
             container_block = document.getElementById('subbmit');
             container_block.appendChild( block_to_insert );
-            console.log('Error occured while sending message')
         }
     });   
 }
