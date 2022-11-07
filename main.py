@@ -51,7 +51,7 @@ def send_mail():
             f"MSG from {request.json['name']} (using personal web-site)", 
             sender=request.json['email'], recipients=['diana.matkava.pr@gmail.com'])
         msg.body = request.json['message']
-        # mail.send(msg)
+        mail.send(msg)
         message = {'subbmit': 'Message was sent'}
         form = ContactForm()
         
