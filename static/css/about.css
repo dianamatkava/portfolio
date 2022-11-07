@@ -24,7 +24,7 @@
     margin-bottom: 15%;
 }
 .brief_content div h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 8%;
 }
 .portfolio_block .portfolio_content {
@@ -39,7 +39,7 @@
     color: #f5f6f7;
     font-size: 28px;
     margin: 15px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .skills {
@@ -146,10 +146,15 @@
     color: grey;
   }
 
-
+.intro {
+    display: none;
+}
 @media (max-width: 660px) {
     .brief_content {
         display: none;
+    }
+    .intro {
+        display: block;
     }
     p {
         min-width: 300px;
