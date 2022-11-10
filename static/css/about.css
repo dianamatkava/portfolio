@@ -15,6 +15,11 @@
     margin: auto;
     text-align: center;
 }
+
+.myskills > ul > li {
+    margin: 15px;
+    text-align: left;
+}
 .brief_content div > img {
     border-radius: 50%;
     width: 400px;
@@ -39,14 +44,14 @@
     color: #f5f6f7;
     font-size: 28px;
     margin: 15px;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .skills {
     margin-top: 50px;
 }
 .border {
-    margin-right: 5px;
+    margin: 3px;
 }
 .portfolio_content > section {
     max-width: 800px;
@@ -129,6 +134,7 @@
   p > code, .container > code, .border {
       display: inline-block;
       padding: 5px;
+      font-size: 12px;
       border-radius: 5px;
       background-color: #f6f9ff;
       color: #0b1528;
@@ -149,6 +155,16 @@
 .intro {
     display: none;
 }
+
+.line {
+             
+    /* Increase this as per requirement */
+    padding-bottom: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: grey;
+    width: fit-content;
+  }
 @media (max-width: 660px) {
     .brief_content {
         display: none;
