@@ -1,42 +1,31 @@
-#### The project hosted by the following address: http://diana-gera.herokuapp.com/
-## Install npm dependensies:
-```bash
+## My Personal Webpage
+Welcome to my personal website, built with Next.js. This webpage serves as a comprehensive showcase of my professional journey, highlighting my best projects, work experience, and education.
+
+<img src="./preview.png">
+
+### Contact
+If you have any questions, collaboration proposals, or feedback, feel free to get in touch with me:
+
+- Email: [diana.matkava.pr@gmail.com](mailto:diana.matkava.pr@gmail.com)
+- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/diana-matkava-7b7302227/)
+
+
+### Technologies
+This project is built using:
+
+- Frontend: `Next.js`, `React`, `TypeScript`
+- Styling: `Tailwind CSS`
+- Deployment: `Vercel`
+
+
+### Branches
+- Master Branch: This branch contains the latest version of my portfolio, with up-to-date info.
+- Archived Portfolio from 2022: Holds an older version of my portfolio.
+
+### Getting Started
+To run the project locally, follow these steps:
+
+```shell
 npm install
-```
-
-## Create and activate virtual environment:
-```bash
-python3 -m venv venv
-venv\Scripts\activate (Windows)
-source venv/bin/activate (Linux)
-```
-
-## Install dependensies for backend:
-```bash
-pip install -r requirements.txt
-```
-
-## Run server:
-```bash
-flask --app main --debug run
-```
-
-## To manage CSS using Tailwind run:
-```bash
-npx tailwindcss -i static/css/main.css -o static/css/tailwind.css --watch
-```
-
-## Add .env file and put your enviranment variables:
-```bash
-'SECRET_KEY' = 'SECRET_KEY'
-```
-
-### SMTP config: 
-```bash
-'MAIL_SERVER'= 'MAIL_SERVER'
-'MAIL_PORT' = 'MAIL_PORT'
-'MAIL_USERNAME' = 'MAIL_USERNAME'
-'MAIL_PASSWORD' = 'MAIL_PASSWORD'
-'MAIL_USE_TLS' = 'MAIL_USE_TLS'
-'MAIL_USE_SSL' = 'MAIL_USE_SSL'
+npm run dev
 ```
