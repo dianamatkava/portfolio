@@ -1,7 +1,7 @@
 ## My Personal Webpage
 Welcome to my personal website, built with Next.js. This webpage serves as a comprehensive showcase of my professional journey, highlighting my best projects, work experience, and education.
 
-<img src="./preview.png">
+<img src="./assets/preview.png">
 
 ### Contact
 If you have any questions, collaboration proposals, or feedback, feel free to get in touch with me:
