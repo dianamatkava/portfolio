@@ -26,7 +26,7 @@ export default function Logo() {
           />
         </svg>
       </div>
-      <div className="justify-start text-white text-sm font-medium">
+      <div className="justify-start text-white text-sm font-medium whitespace-nowrap">
         Diana Matkava
       </div>
     </Link>

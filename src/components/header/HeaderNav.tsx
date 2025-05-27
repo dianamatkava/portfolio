@@ -4,10 +4,10 @@ import StatusBarge from "../shared/StatusBarge";
 
 export default function HeaderNav() {
   return (
-    <div className="w-full py-5 inline-flex justify-between items-center bg-black">
+    <div className="w-full py-8 inline-flex justify-between items-center bg-black">
       <StatusBarge />
 
-      <div className="w-fit mx-auto py-3 px-4 rounded-3xl outline-1 outline-neutral-600 inline-flex items-center gap-12">
+      <div className="w-fit mx-auto py-3 px-4 rounded-3xl outline-1 outline-neutral-800 inline-flex items-center gap-12">
         <Logo />
         <nav aria-label="Main site navigation">
           <ul className="flex justify-start items-center gap-6 text-white text-sm font-medium">

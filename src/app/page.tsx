@@ -1,7 +1,19 @@
+import HeaderHeroMain from "../components/header/HeaderHeroMain";
+
 export default function Home() {
   return (
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-    </p>
+    <div
+      className="w-full h-full container py-12"
+      style={{
+        backgroundImage: "url(/bg-main.jpg)",
+        backgroundBlendMode: "overlay",
+        backgroundColor: "rgba(0, 0, 0, 0.5)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <HeaderHeroMain />
+    </div>
   );
 }
