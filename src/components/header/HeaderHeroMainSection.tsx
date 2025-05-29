@@ -26,7 +26,7 @@ export default function HeaderHeroMain() {
         <div className="w-3/5">
           <Category title="Socials:" />
         </div>
-        <SocialMedias />
+        <SocialMedias colorClassName="text-zinc-500 group-hover:text-zinc-400" />
       </div>
     </section>
   );

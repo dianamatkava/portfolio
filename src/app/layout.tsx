@@ -28,7 +28,7 @@ export default function RootLayout({
           <HeaderNav />
         </header>
         <main className="w-full">{children}</main>
-        <footer className="w-full container">
+        <footer className="w-full">
           <Footer />
         </footer>
       </body>

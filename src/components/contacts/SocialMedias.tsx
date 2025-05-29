@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { socialLinks } from "@app/data/main";
 
-export default function SocialMedias() {
+export default function SocialMedias({
+  colorClassName = "",
+}: {
+  colorClassName?: string;
+}) {
   return (
     <div className="w-full inline-flex justify-start items-start gap-6">
       {socialLinks.map((social) => (
@@ -14,9 +18,11 @@ export default function SocialMedias() {
         >
           <social.icon
             size={24}
-            className="text-zinc-500 group-hover:text-zinc-400 transition-all duration-300"
+            className={`text-white group-hover:text-zinc-400 transition-all duration-300 ${colorClassName}`}
           />
-          <span className="text-zinc-500 group-hover:text-zinc-400 font-medium transition-all duration-300">
+          <span
+            className={`text-white group-hover:text-zinc-400 font-medium transition-all duration-300 ${colorClassName}`}
+          >
             {social.name}
           </span>
         </Link>
