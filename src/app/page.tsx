@@ -1,9 +1,10 @@
-import HeaderHeroMain from "../components/header/HeaderHeroMainSection";
+import AboutMeSection from "@app/components/about/AboutMeSection";
+import HeaderHeroMainSection from "../components/header/HeaderHeroMainSection";
 
 export default function Home() {
   return (
     <div
-      className="w-full h-full container py-12"
+      className="w-full h-full space-y-36 container py-12"
       style={{
         backgroundImage: "url(/bg-main.jpg)",
         backgroundBlendMode: "overlay",
@@ -13,7 +14,8 @@ export default function Home() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <HeaderHeroMain />
+      <HeaderHeroMainSection />
+      <AboutMeSection />
     </div>
   );
 }

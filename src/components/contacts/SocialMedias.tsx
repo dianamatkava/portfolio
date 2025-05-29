@@ -21,7 +21,7 @@ export default function SocialMedias({
             className={`text-white group-hover:text-zinc-400 transition-all duration-300 ${colorClassName}`}
           />
           <span
-            className={`text-white group-hover:text-zinc-400 font-medium transition-all duration-300 ${colorClassName}`}
+            className={`text-base text-white group-hover:text-zinc-400 font-medium transition-all duration-300 ${colorClassName}`}
           >
             {social.name}
           </span>

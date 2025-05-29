@@ -34,7 +34,7 @@ function FooterTopBar() {
           <div className="justify-start text-zinc-500 text-sm">Email:</div>
           <Link
             href="mailto:diana@matkava.com"
-            className="justify-start text-white text-md font-semibold hover:text-zinc-400 transition-all duration-300"
+            className="justify-start text-white text-base font-semibold hover:text-zinc-400 transition-all duration-300"
           >
             diana@matkava.com
           </Link>
@@ -44,7 +44,7 @@ function FooterTopBar() {
           <div className="justify-start text-zinc-500 text-sm">Contact Me:</div>
           <Link
             href="#contact"
-            className="justify-start text-white text-md whitespace-nowrap font-semibold underline uppercase hover:text-zinc-400 transition-all duration-300"
+            className="justify-start text-base text-white whitespace-nowrap font-semibold underline uppercase hover:text-zinc-400 transition-all duration-300"
           >
             Contact Now
           </Link>
@@ -76,7 +76,7 @@ function SubscribeForm() {
       <form className="w-full inline-flex justify-start items-start gap-2">
         <input
           placeholder="Email"
-          className="w-full min-w-60 text-sm h-10 px-4 py-3 bg-transparent rounded-2xl outline outline-1 outline-offset-[-0.50px] outline-neutral-500 inline-flex justify-start items-center overflow-hidden"
+          className="w-full min-w-60 text-base h-10 px-4 py-3 bg-transparent rounded-2xl outline outline-1 outline-offset-[-0.50px] outline-neutral-500 inline-flex justify-start items-center overflow-hidden"
         />
         <CTA title="Submit" size="sm" color="white" type="submit">
           <FaPlay />
@@ -93,7 +93,7 @@ function FooterPageLinks() {
         Page Links
       </h2>
 
-      <ul className="grid grid-cols-2 gap-x-12 gap-y-3 text-md text-zinc-500 w-md">
+      <ul className="grid grid-cols-2 gap-x-12 gap-y-2 text-base text-zinc-500 w-md">
         <li>
           <Link
             href="/"
@@ -165,7 +165,7 @@ function FooterPrivacyPolicy() {
           <span className="justify-start text-zinc-500 text-sm whitespace-nowrap">
             Based in:
           </span>
-          <span className="ml-2 text-white font-bold whitespace-nowrap">
+          <span className="ml-2 text-base text-white font-bold whitespace-nowrap">
             Berlin, DEU
           </span>
         </address>

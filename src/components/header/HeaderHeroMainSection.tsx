@@ -2,7 +2,7 @@ import Category from "../shared/Category";
 import DelimiterLine from "../shared/DelimiterLine";
 import SocialMedias from "../contacts/SocialMedias";
 
-export default function HeaderHeroMain() {
+export default function HeaderHeroMainSection() {
   return (
     <section
       className="w-full flex flex-col items-start gap-12"
