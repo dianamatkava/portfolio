@@ -1,13 +1,15 @@
 import Category from "../shared/Category";
+import DelimiterLine from "../shared/DelimiterLine";
 import SocialMedias from "../contacts/SocialMedias";
 
 export default function HeaderHeroMain() {
   return (
-    <div className="w-full flex flex-col items-start gap-12">
-      <HeroTitle />
-
-      <div className="w-full h-0 outline-[0.50px] outline-zinc-700" />
-
+    <section
+      className="w-full flex flex-col items-start gap-12"
+      aria-labelledby="hero-title"
+    >
+      <HeroTitle id="hero-title" />
+      <DelimiterLine />
       <div className="w-full inline-flex justify-between items-start">
         <div className="w-3/5">
           <Category title="Who am I:" />
@@ -26,14 +28,14 @@ export default function HeaderHeroMain() {
         </div>
         <SocialMedias />
       </div>
-    </div>
+    </section>
   );
 }
 
-function HeroTitle() {
+function HeroTitle({ id }: { id: string }) {
   return (
     <div className="w-fit flex flex-col justify-start items-start gap-2 py-12">
-      <h1 className="flex flex-col justify-start">
+      <h1 className="flex flex-col justify-start" id={id}>
         <span className="text-white text-[180px] font-extrabold leading-[175px]">
           CREATIVE
         </span>

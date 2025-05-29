@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -28,6 +28,21 @@ module.exports = {
       borderRadius: {
         lg: "0.75rem",
       },
+      keyframes: {
+        scrollLeft: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-30%)" },
+        },
+        scrollRight: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-30%)" },
+        },
+      },
+      animation: {
+        "scroll-left": "scrollLeft 30s linear infinite",
+        "scroll-right": "scrollRight 30s linear infinite",
+      },
     },
   },
+  plugins: [],
 };

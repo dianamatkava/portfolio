@@ -1,4 +1,4 @@
-import HeaderHeroMain from "../components/header/HeaderHeroMain";
+import HeaderHeroMain from "../components/header/HeaderHeroMainSection";
 
 export default function Home() {
   return (

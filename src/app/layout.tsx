@@ -1,5 +1,6 @@
 import "./globals.css";
 
+import Footer from "@app/components/footer/Footer";
 import HeaderNav from "../components/header/HeaderNav";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
@@ -27,6 +28,9 @@ export default function RootLayout({
           <HeaderNav />
         </header>
         <main className="w-full">{children}</main>
+        <footer className="w-full container">
+          <Footer />
+        </footer>
       </body>
     </html>
   );
