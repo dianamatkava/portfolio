@@ -8,8 +8,14 @@ export default function ExpertiseSection() {
       aria-labelledby="expertise-title"
     >
       <h2 className="sr-only">My Areas of Expertise:</h2>
-      <ExpertiseArticle />
-      <ExpertiseArticle />
+      <div className="w-full grid grid-cols-2 gap-6">
+        <ExpertiseArticle />
+        <ExpertiseArticle />
+        <ExpertiseArticle />
+        <ExpertiseArticle />
+        <ExpertiseArticle />
+        <ExpertiseArticle />
+      </div>
     </section>
   );
 }

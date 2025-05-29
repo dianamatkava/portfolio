@@ -7,7 +7,7 @@ import SocialMedias from "../contacts/SocialMedias";
 export default function Footer() {
   return (
     <>
-      <div className="w-full space-y-12 container pt-12">
+      <div className="w-full space-y-12 container pt-24">
         <FooterTopBar />
         <DelimiterLine />
         <FooterMiddleBar />

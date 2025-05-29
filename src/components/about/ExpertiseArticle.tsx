@@ -1,98 +1,63 @@
+import Image from "next/image";
+import Tag from "../shared/Tag";
+
+const data = [
+  {
+    title: "Backend Development",
+    image: "/expertise/backend.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. Lorem Lorem Ipsum is simply dummy text",
+    tags: [
+      "Django",
+      "FastAPI",
+      "Flask",
+      "SQLAlchemy",
+      "Tortoise ORM",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+    ],
+  },
+  {
+    title: "Backend Development",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. Lorem Lorem Ipsum is simply dummy text",
+    tags: ["Django", "FastAPI", "Flask", "SQLAlchemy", "Tortoise ORM"],
+  },
+];
+
 export default function ExpertiseArticle() {
   return (
-    <div className="w-[526px] px-9 py-5 bg-neutral-900 rounded-2xl shadow-[2px_2px_4px_0px_rgba(255,255,255,0.10)] outline outline-1 outline-offset-[-1px] outline-neutral-800 inline-flex flex-col justify-start items-start gap-7 overflow-hidden">
-      <div className="inline-flex justify-center items-center gap-2.5">
-        <div className="w-11 h-11 bg-red-300 rounded-[5px]" />
-        <div className="justify-start text-white text-lg font-semibold font-['Plus_Jakarta_Sans']">
+    <article className="w-full px-8 py-6 bg-[#0F0F0F] rounded-2xl shadow-md outline outline-1 outline-offset-[-1px] outline-neutral-900 inline-flex flex-col justify-start items-start gap-4 overflow-hidden text-base">
+      <header className="inline-flex justify-center items-center gap-2.5">
+        <Image
+          src={data[0].image || ""}
+          alt={data[0].title}
+          width={40}
+          height={40}
+          className="rounded-md bg-white object-cover p-1.5"
+        />
+        <h3 className="justify-start text-white text-lg font-semibold">
           Backend Development
-        </div>
-      </div>
-      <div className="w-[456px] text-justify justify-start text-zinc-500 text-base font-normal font-['Plus_Jakarta_Sans']">
+        </h3>
+      </header>
+
+      <p className="w-full text-zinc-500">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry. Lorem Lorem Ipsum is simply
         dummy text
+      </p>
+
+      <div className="w-full inline-flex flex-wrap justify-start items-start gap-2">
+        {data[0].tags.map((tag) => (
+          <Tag key={tag} tag={tag} />
+        ))}
       </div>
-      <div className="self-stretch flex flex-col justify-start items-start gap-[5px]">
-        <div className="self-stretch inline-flex justify-start items-center gap-[5px]">
-          <div className="flex justify-start items-center gap-1.5">
-            <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-              <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-                Django
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-start items-center gap-1.5">
-            <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-              <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-                FastAPI
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-start items-center gap-1.5">
-            <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-              <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-                Flask
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-start items-center gap-1.5">
-            <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-              <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-                SQLAlchemy
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-start items-center gap-1.5">
-            <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-              <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-                Tortoise ORM
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="self-stretch inline-flex justify-start items-center gap-[5px]">
-          <div className="flex justify-start items-center gap-1.5">
-            <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-              <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-                pytest
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-start items-center gap-1.5">
-            <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-              <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-                unittest
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-start items-center gap-1.5">
-            <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-              <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-                ruff
-              </div>
-            </div>
-          </div>
-          <div className="flex justify-start items-center gap-1.5">
-            <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-              <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-                uv/poetry
-              </div>
-            </div>
-          </div>
-          <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-            <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-              Pydantic
-            </div>
-          </div>
-          <div className="flex justify-start items-center gap-1.5">
-            <div className="h-8 px-2.5 bg-neutral-800 rounded-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
-              <div className="justify-start text-zinc-500 text-sm font-medium font-['Plus_Jakarta_Sans']">
-                MyPy
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </article>
   );
 }

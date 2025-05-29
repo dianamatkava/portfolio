@@ -1,7 +1,7 @@
 import CTA from "../shared/CTA";
 import Category from "../shared/Category";
 import { FaLocationDot } from "react-icons/fa6";
-import { HiOutlineOfficeBuilding } from "react-icons/hi";
+import { HiOfficeBuilding } from "react-icons/hi";
 import Image from "next/image";
 
 export default function AboutMeSection() {
@@ -18,7 +18,7 @@ export default function AboutMeSection() {
 
             <div className="w-full flex flex-col gap-2 text-zinc-300">
               <div className="inline-flex items-center gap-2">
-                <HiOutlineOfficeBuilding />
+                <HiOfficeBuilding />
                 <span>Software Developer @ Fintiba GmbH (Bank Account)</span>
               </div>
 
