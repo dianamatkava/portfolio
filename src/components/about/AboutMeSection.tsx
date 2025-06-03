@@ -59,14 +59,14 @@ export default function AboutMeSection() {
           <Button
             title="GitHub"
             href="#"
-            size="base"
+            size="fit"
             color="black"
             className="!px-10"
           />
           <Button
             title="Linkedin"
             href="#"
-            size="base"
+            size="fit"
             color="black"
             className="!px-10"
           />

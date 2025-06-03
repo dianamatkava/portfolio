@@ -1,13 +1,13 @@
 import AboutMeSection from "@app/components/about/AboutMeSection";
 import ExpertiseSection from "@app/components/about/ExpertiseSection";
 import HeaderHeroMainSection from "../components/header/HeaderHeroMainSection";
-import ProjectsListSection from "@app/components/about/ProjectsListSection";
+import ProjectsListSection from "@app/components/projects/ProjectsListSection";
 
 export default function Home() {
   return (
-    <div className="w-full h-full space-y-6 container">
+    <div className="w-full h-full space-y-6">
       <div
-        className="w-full h-full space-y-36"
+        className="w-full h-full space-y-36 container"
         style={{
           backgroundImage: "url(/bg-main.jpg)",
           backgroundBlendMode: "overlay",
