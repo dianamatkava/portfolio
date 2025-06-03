@@ -1,6 +1,7 @@
 import AboutMeSection from "@app/components/about/AboutMeSection";
 import ExpertiseSection from "@app/components/about/ExpertiseSection";
 import HeaderHeroMainSection from "../components/header/HeaderHeroMainSection";
+import ProjectsListSection from "@app/components/about/ProjectsListSection";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       </div>
       <div className="w-full h-full space-y-20 container">
         <ExpertiseSection />
+        <ProjectsListSection />
       </div>
     </div>
   );

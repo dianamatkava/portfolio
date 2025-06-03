@@ -43,7 +43,7 @@ function HeroTitle({ id }: { id: string }) {
           DEVELOPER
         </span>
       </h1>
-      <span className="self-stretch text-right justify-start text-neutral-400 text-md leading-none">
+      <span className="self-stretch text-right justify-start text-zinc-500 text-sm leading-none">
         # Diana Matkava / Web Developer
       </span>
     </div>

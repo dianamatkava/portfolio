@@ -12,16 +12,36 @@ export default function HeaderNav() {
         <nav aria-label="Main site navigation">
           <ul className="flex justify-start items-center gap-6 text-white text-sm font-medium">
             <li>
-              <a href="#about">About</a>
+              <a
+                href="#about"
+                className="cursor-pointer hover:text-zinc-400 transition-colors duration-300"
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a
+                href="#projects"
+                className="cursor-pointer hover:text-zinc-400 transition-colors duration-300"
+              >
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <a
+                href="#experience"
+                className="cursor-pointer hover:text-zinc-400 transition-colors duration-300"
+              >
+                Experience
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a
+                href="#contact"
+                className="cursor-pointer hover:text-zinc-400 transition-colors duration-300"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
