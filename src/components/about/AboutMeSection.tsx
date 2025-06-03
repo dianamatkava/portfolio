@@ -1,4 +1,4 @@
-import CTA from "../shared/CTA";
+import Button from "../shared/Button";
 import Category from "../shared/Category";
 import { FaLocationDot } from "react-icons/fa6";
 import { HiOfficeBuilding } from "react-icons/hi";
@@ -9,6 +9,7 @@ export default function AboutMeSection() {
     <section
       className="w-full self-stretch inline-flex justify-between items-start text-base text-white"
       aria-labelledby="about-me-title"
+      id="about"
     >
       <div className="space-y-8 w-1/2">
         <div className="space-y-6">
@@ -55,14 +56,14 @@ export default function AboutMeSection() {
           </div>
         </div>
         <div className="inline-flex justify-start items-start gap-4">
-          <CTA
+          <Button
             title="GitHub"
             href="#"
             size="base"
             color="black"
             className="!px-10"
           />
-          <CTA
+          <Button
             title="Linkedin"
             href="#"
             size="base"

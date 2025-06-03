@@ -1,4 +1,5 @@
-import CTA from "../shared/CTA";
+import Button from "../shared/Button";
+import Link from "next/link";
 import Logo from "../shared/Logo";
 import StatusBarge from "../shared/StatusBarge";
 
@@ -12,44 +13,44 @@ export default function HeaderNav() {
         <nav aria-label="Main site navigation">
           <ul className="flex justify-start items-center gap-6 text-white text-sm font-medium">
             <li>
-              <a
-                href="#about"
+              <Link
+                href="/#about"
                 className="cursor-pointer hover:text-zinc-400 transition-colors duration-300"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#projects"
                 className="cursor-pointer hover:text-zinc-400 transition-colors duration-300"
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="#experience"
                 className="cursor-pointer hover:text-zinc-400 transition-colors duration-300"
               >
                 Experience
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                href="/contacts"
                 className="cursor-pointer hover:text-zinc-400 transition-colors duration-300"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
       </div>
 
       <div className="inline-flex items-center gap-3">
-        <CTA title="Open CV" size="sm" color="white" />
-        <CTA title="Get in Touch" size="sm" color="black" />
+        <Button title="Open CV" size="sm" color="white" />
+        <Button title="Get in Touch" size="sm" color="black" />
       </div>
     </div>
   );

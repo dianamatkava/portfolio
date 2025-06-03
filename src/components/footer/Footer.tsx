@@ -1,4 +1,4 @@
-import CTA from "../shared/CTA";
+import Button from "../shared/Button";
 import DelimiterLine from "../shared/DelimiterLine";
 import { FaPlay } from "react-icons/fa";
 import Link from "next/link";
@@ -78,9 +78,9 @@ function SubscribeForm() {
           placeholder="Email"
           className="w-full min-w-60 text-base h-10 px-4 py-3 bg-transparent rounded-2xl outline outline-1 outline-offset-[-0.50px] outline-neutral-500 inline-flex justify-start items-center overflow-hidden"
         />
-        <CTA title="Submit" size="sm" color="white" type="submit">
+        <Button title="Submit" size="sm" color="white" type="submit">
           <FaPlay />
-        </CTA>
+        </Button>
       </form>
     </div>
   );
