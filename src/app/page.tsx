@@ -5,9 +5,9 @@ import ProjectsListSection from "@app/components/about/ProjectsListSection";
 
 export default function Home() {
   return (
-    <div className="w-full h-full space-y-6">
+    <div className="w-full h-full space-y-6 container">
       <div
-        className="w-full h-full space-y-36 container"
+        className="w-full h-full space-y-36"
         style={{
           backgroundImage: "url(/bg-main.jpg)",
           backgroundBlendMode: "overlay",

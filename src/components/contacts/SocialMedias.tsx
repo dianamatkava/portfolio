@@ -7,7 +7,7 @@ export default function SocialMedias({
   colorClassName?: string;
 }) {
   return (
-    <div className="w-full inline-flex justify-start items-start gap-6">
+    <div className="w-full inline-flex justify-start items-start gap-10">
       {socialLinks.map((social) => (
         <Link
           key={social.name}
