@@ -48,3 +48,9 @@ input::placeholder,
 textarea::placeholder {
   @apply text-zinc-600 text-sm font-normal;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0; /* Optional if using sticky headers */
+  overscroll-behavior: none;
+}

@@ -28,7 +28,7 @@ export const FlipTopText = ({ children }: { children: React.ReactNode }) => {
       }}
     >
       <span
-        className="block transition-transform duration-500"
+        className="block transition-transform duration-700"
         style={{
           transform:
             hovered && textHeight

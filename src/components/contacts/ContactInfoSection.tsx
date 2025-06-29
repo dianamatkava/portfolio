@@ -9,7 +9,11 @@ export default function ContactInfoSection() {
       className="w-full max-w-xl flex flex-col justify-start items-start gap-14"
       aria-labelledby="contact-info-title"
     >
-      <header className="w-full space-y-2">
+      <header
+        className="w-full space-y-2"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <Title
           title="Crafting Impactful Software Solutions"
           id="contact-info-title"
@@ -21,7 +25,11 @@ export default function ContactInfoSection() {
         </p>
       </header>
 
-      <div className="w-full self-stretch inline-flex justify-start items-start gap-10">
+      <div
+        className="w-full self-stretch inline-flex justify-start items-start gap-10"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <Image
           alt="Diana Matkava"
           className="w-80 h-56 rounded-2xl"
@@ -71,7 +79,9 @@ export default function ContactInfoSection() {
           </div>
         </div>
       </div>
-      <SocialMedias />
+      <div data-aos="fade-up" data-aos-delay="400">
+        <SocialMedias />
+      </div>
     </section>
   );
 }

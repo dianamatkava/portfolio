@@ -15,7 +15,7 @@ export default function Category({
   return (
     <Tag
       id={id}
-      className={`w-full text-zinc-500 text-base font-normal uppercase ${className}`}
+      className={`w-full text-zinc-500 text-sm font-normal uppercase ${className}`}
     >
       {title}
     </Tag>

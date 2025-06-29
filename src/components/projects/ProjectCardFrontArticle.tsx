@@ -1,4 +1,5 @@
-import Image from "next/image";
+"use client";
+
 import ReadMore from "../shared/ReadMore";
 import Title from "../shared/Title";
 

@@ -15,22 +15,33 @@ export default function AboutMeSection() {
         <div className="space-y-6">
           <Category title="About Me:" id="about-me-title" />
           <div className="flex flex-col justify-start items-start gap-5">
-            <p className="justify-start text-6xl font-medium">Diana Matkava</p>
+            <p
+              className="justify-start text-6xl font-medium"
+              data-aos="fade-up"
+            >
+              Diana Matkava
+            </p>
 
             <div className="w-full flex flex-col gap-2 text-zinc-300">
-              <div className="inline-flex items-center gap-2">
+              <div
+                className="inline-flex items-center gap-2"
+                data-aos="fade-up"
+              >
                 <HiOfficeBuilding />
                 <span>Software Developer @ Fintiba GmbH (Bank Account)</span>
               </div>
 
-              <div className="inline-flex items-center gap-2">
+              <div
+                className="inline-flex items-center gap-2"
+                data-aos="fade-up"
+              >
                 <FaLocationDot />
                 <span>Berlin, Germany</span>
               </div>
             </div>
 
             <div className="w-full text-justify text-zinc-400 text-base space-y-4">
-              <p>
+              <p data-aos="fade-up">
                 Currently, at Fintiba GmbH, we're pushing the boundaries of
                 fintech innovation, leveraging my Python proficiency and
                 insights from a Bachelor's degree in Computer Science. With a
@@ -79,6 +90,7 @@ export default function AboutMeSection() {
           className="w-full h-full rounded-2xl object-cover"
           src="/about-me.jpg"
           width={522}
+          data-aos="fade-up"
           height={280}
         />
       </figure>

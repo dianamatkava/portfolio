@@ -1,3 +1,5 @@
+"use client";
+
 import Button from "../shared/Button";
 import Category from "../shared/Category";
 import Title from "../shared/Title";

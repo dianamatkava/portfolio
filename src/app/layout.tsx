@@ -4,6 +4,7 @@ import Footer from "@app/components/footer/Footer";
 import HeaderNav from "../components/header/HeaderNav";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -23,6 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={plusJakartaSans.variable}>
+      <head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <Script
+          src="https://unpkg.com/aos@next/dist/aos.js"
+          strategy="beforeInteractive"
+        />
+        <Script id="aos-init" strategy="beforeInteractive">
+          {`AOS.init();`}
+        </Script>
+      </head>
       <body className="w-full">
         <header className="w-full container">
           <HeaderNav />

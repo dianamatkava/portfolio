@@ -17,7 +17,9 @@ export default function Contacts() {
     >
       <div className="w-full h-full inline-flex flex-row justify-between items-center py-20 gap-20 container">
         <ContactInfoSection />
-        <ContactFormSection />
+        <div data-aos="fade-up" data-aos-delay="200">
+          <ContactFormSection />
+        </div>
       </div>
     </div>
   );

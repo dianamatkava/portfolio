@@ -1,20 +1,24 @@
 "use client";
 
-import BlurText from "../shared/animations/BlurText";
 import Category from "../shared/Category";
 import DelimiterLine from "../shared/DelimiterLine";
 import SocialMedias from "../contacts/SocialMedias";
-import TypewriterText from "./TypewriterText";
+import TypewriterText from "../shared/animations/TypewriterText";
 
 export default function HeaderHeroMainSection() {
   return (
     <section
-      className="w-full flex flex-col items-start gap-12"
+      className="w-full flex flex-col items-start gap-10"
       aria-labelledby="hero-title"
     >
       <HeroTitle id="hero-title" />
       <DelimiterLine />
-      <div className="w-full inline-flex justify-between items-start">
+      <div
+        className="w-full inline-flex justify-between items-start"
+        data-aos="fade-up"
+        data-aos-delay="400"
+        data-aos-easing="ease-in-sine"
+      >
         <div className="w-3/5">
           <Category title="Who am I:" />
         </div>
@@ -26,11 +30,16 @@ export default function HeaderHeroMainSection() {
         </p>
       </div>
 
-      <div className="w-full inline-flex justify-between items-start">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="600"
+        data-aos-offset="0"
+        className="w-full inline-flex justify-between items-start"
+      >
         <div className="w-3/5">
           <Category title="Socials:" />
         </div>
-        <SocialMedias colorClassName="text-zinc-500" />
+        <SocialMedias />
       </div>
     </section>
   );
@@ -45,18 +54,14 @@ function HeroTitle({ id }: { id: string }) {
         titleClassName="uppercase text-white text-[180px] font-extrabold leading-[175px]"
         wordsClassName="uppercase text-neutral-500/50 text-[180px] font-extrabold leading-[175px]"
       />
-      <BlurText
-        text="# Diana Matkava / Web Developer"
-        delay={150}
-        animateBy="words"
-        direction="top"
-        animationFrom={{ filter: "blur(10px)", opacity: 0, y: -50 }}
-        animationTo={[{ filter: "blur(0px)", opacity: 1, y: 0 }]}
-        onAnimationComplete={() => {
-          console.log("Animation complete");
-        }}
+      <div
+        data-aos="fade-left"
+        data-aos-delay="400"
+        data-aos-easing="ease-in-sine"
         className="absolute bottom-0 right-0 text-right justify-start text-zinc-500 text-sm leading-none"
-      />
+      >
+        # Diana Matkava / Web Developer
+      </div>
     </div>
   );
 }

@@ -33,7 +33,10 @@ const data = [
 
 export default function ExpertiseArticle() {
   return (
-    <article className="w-full px-8 py-6 bg-[#0F0F0F] rounded-2xl shadow-md outline outline-1 outline-offset-[-1px] outline-neutral-900 inline-flex flex-col justify-start items-start gap-4 overflow-hidden text-base">
+    <article
+      className="w-full px-8 py-6 bg-[#0F0F0F] rounded-2xl shadow-md outline outline-1 outline-offset-[-1px] outline-neutral-900 inline-flex flex-col justify-start items-start gap-4 overflow-hidden text-base"
+      data-aos="fade-up"
+    >
       <header className="inline-flex justify-center items-center gap-2.5">
         <Image
           src={data[0].image || ""}

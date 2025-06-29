@@ -23,8 +23,8 @@ export default function Home() {
       </div>
       <div className="w-full h-full space-y-20 container">
         <ExpertiseSection />
-        <ProjectsListSection />
       </div>
+      <ProjectsListSection />
     </div>
   );
 }

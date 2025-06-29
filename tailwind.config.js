@@ -37,10 +37,17 @@ module.exports = {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-30%)" },
         },
+        gradient: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
       },
       animation: {
         "scroll-left": "scrollLeft 30s linear infinite",
         "scroll-right": "scrollRight 30s linear infinite",
+        spinSlow: "spin 2s linear infinite",
+        gradient: "gradient 8s linear infinite",
       },
     },
   },

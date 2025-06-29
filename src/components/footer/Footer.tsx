@@ -23,14 +23,22 @@ export default function Footer() {
 function FooterTopBar() {
   return (
     <>
-      <h2 className="flex flex-col justify-start">
+      <h2
+        className="flex flex-col justify-start"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         <span className="text-white text-7xl font-semibold">Let's build</span>
         <span className="text-neutral-500/50 text-7xl font-semibold">
           Incredible apps together.
         </span>
       </h2>
 
-      <div className="w-full inline-flex justify-between items-center">
+      <div
+        className="w-full inline-flex justify-between items-center"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <div className="inline-flex flex-col justify-start items-start gap-2.5">
           <div className="justify-start text-zinc-500 text-sm">Email:</div>
           <AnimatedLink
@@ -41,7 +49,11 @@ function FooterTopBar() {
           </AnimatedLink>
         </div>
 
-        <div className="inline-flex flex-col justify-start items-start gap-2.5">
+        <div
+          className="inline-flex flex-col justify-start items-start gap-2.5"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div className="justify-start text-zinc-500 text-sm">Contact Me:</div>
           <AnimatedLink
             href="#contact"
@@ -51,7 +63,11 @@ function FooterTopBar() {
           </AnimatedLink>
         </div>
 
-        <div className="inline-flex flex-col justify-start items-start gap-2.5">
+        <div
+          className="inline-flex flex-col justify-start items-start gap-2.5"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div className="justify-start text-zinc-500 text-sm">Social:</div>
           <SocialMedias />
         </div>
@@ -61,7 +77,11 @@ function FooterTopBar() {
 }
 function FooterMiddleBar() {
   return (
-    <div className="w-full inline-flex justify-between items-center">
+    <div
+      className="w-full inline-flex justify-between items-center"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
       <SubscribeForm />
       <FooterPageLinks />
     </div>
@@ -70,7 +90,11 @@ function FooterMiddleBar() {
 
 function SubscribeForm() {
   return (
-    <div className="w-full flex flex-col justify-center items-start gap-6 max-w-96">
+    <div
+      className="w-full flex flex-col justify-center items-start gap-6 max-w-96"
+      data-aos="fade-up"
+      data-aos-delay="400"
+    >
       <h3 className="text-zinc-100 text-3xl font-semibold">
         Subscribe for unique updates:
       </h3>
@@ -89,7 +113,12 @@ function SubscribeForm() {
 
 function FooterPageLinks() {
   return (
-    <nav aria-labelledby="page-links" className="w-full max-w-[336px]">
+    <nav
+      aria-labelledby="page-links"
+      className="w-full max-w-[336px]"
+      data-aos="fade-up"
+      data-aos-delay="300"
+    >
       <h2 id="page-links" className="text-2xl font-semibold text-white mb-6">
         Page Links
       </h2>

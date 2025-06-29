@@ -5,11 +5,14 @@ import LogoSvg from "@/public/LogoSvg.svg";
 export default function Logo() {
   return (
     <AnimatedLink
-      href="/#about"
-      lineHeight={1.25}
+      href="/"
       className="w-fit flex justify-start items-center gap-1.5 cursor-pointer group"
     >
-      <div role="img" aria-label="Logo">
+      <div
+        role="img"
+        aria-label="Logo"
+        className="group-hover:animate-spinSlow"
+      >
         <svg
           width="19"
           height="20"

@@ -1,5 +1,8 @@
+import DecryptedText from "../shared/blocks/TextAnimations/DecryptedText";
 import ProjectCardBackArticle from "./ProjectCardBackArticle";
 import ProjectCardFrontArticle from "./ProjectCardFrontArticle";
+import ScrollCardStack from "../shared/blocks/TextAnimations/ScrollCardStack";
+import { ZoomReplace } from "../shared/blocks/TextAnimations/ZoomReplace";
 
 export default function ProjectsListSection() {
   return (
@@ -8,24 +11,38 @@ export default function ProjectsListSection() {
       aria-labelledby="projects-title"
       id="projects"
     >
-      <h2
-        className="flex flex-col justify-center items-center"
-        id="projects-title"
-      >
-        <span className="text-white text-7xl font-semibold">
-          Explore my work
-        </span>
-        <span className="text-neutral-500/50 text-7xl font-semibold">
-          Projects I've worked on
-        </span>
-      </h2>
-
-      <div className="w-full h-full">
-        <ProjectCardFrontArticle />
-        <ProjectCardFrontArticle />
-        <ProjectCardFrontArticle />
-        <ProjectCardBackArticle />
-      </div>
+      <ZoomReplace
+        zoomComponent={
+          <h2
+            className="w-full flex flex-col justify-center items-center"
+            id="projects-title"
+            data-aos="fade-down"
+          >
+            <DecryptedText
+              speed={80}
+              text="Explore my work"
+              className="text-white text-7xl font-semibold"
+              encryptedClassName="text-white text-7xl font-semibold"
+            />
+            <DecryptedText
+              speed={50}
+              text="Projects I've worked on"
+              className="text-neutral-500/50 text-7xl font-semibold"
+              encryptedClassName="text-neutral-500/50 text-7xl font-semibold"
+            />
+          </h2>
+        }
+        revealComponent={
+          <ScrollCardStack
+            cards={[
+              <ProjectCardFrontArticle />,
+              <ProjectCardFrontArticle />,
+              <ProjectCardFrontArticle />,
+              <ProjectCardFrontArticle />,
+            ]}
+          />
+        }
+      />
     </section>
   );
 }
