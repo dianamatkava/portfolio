@@ -6,6 +6,7 @@ export default function ExpertiseSection() {
     <section
       className="w-full self-stretch inline-flex justify-between items-start text-base text-white"
       aria-labelledby="expertise-title"
+      id="experience"
     >
       <h2 className="sr-only">My Areas of Expertise:</h2>
       <div className="w-full grid grid-cols-2 gap-6">

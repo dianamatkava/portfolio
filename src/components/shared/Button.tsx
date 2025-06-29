@@ -1,3 +1,5 @@
+import { AnimatedLink } from "./AnimatedLink";
+import { FlipTopText } from "./animations/FlipTopText";
 import Link from "next/link";
 
 export default function Button({
@@ -24,16 +26,15 @@ export default function Button({
       } ${color === "transparent" ? "bg-transparent" : ""}`}
     >
       {type === "link" ? (
-        <Link
-          role="button"
+        <AnimatedLink
           href={href ?? "/contact"}
           className={`${
             color === "white" ? "text-black" : "text-white"
-          } text-sm font-medium text-center whitespace-nowrap w-fit gap-2`}
+          } text-sm font-medium text-center whitespace-nowrap w-fit gap-2 inline-flex items-center justify-between`}
         >
           {title}
           {children}
-        </Link>
+        </AnimatedLink>
       ) : (
         <button
           type={type}
@@ -41,10 +42,14 @@ export default function Button({
             color === "white" ? "text-black" : "text-white"
           } text-sm font-medium text-center whitespace-nowrap ${
             size === "full" ? "w-full" : "w-fit"
-          } gap-2`}
+          } gap-2 inline-flex items-center justify-between`}
         >
-          {title}
-          {children}
+          <FlipTopText>
+            <span className="inline-flex items-center justify-between">
+              {title}
+              {children}
+            </span>
+          </FlipTopText>
         </button>
       )}
     </div>

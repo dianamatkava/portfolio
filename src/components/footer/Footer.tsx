@@ -1,3 +1,4 @@
+import { AnimatedLink } from "../shared/AnimatedLink";
 import Button from "../shared/Button";
 import DelimiterLine from "../shared/DelimiterLine";
 import { FaPlay } from "react-icons/fa";
@@ -32,22 +33,22 @@ function FooterTopBar() {
       <div className="w-full inline-flex justify-between items-center">
         <div className="inline-flex flex-col justify-start items-start gap-2.5">
           <div className="justify-start text-zinc-500 text-sm">Email:</div>
-          <Link
+          <AnimatedLink
             href="mailto:diana@matkava.com"
-            className="justify-start text-white text-base font-semibold hover:text-zinc-400 transition-all duration-300"
+            className="justify-start text-white text-base font-semibold transition-all duration-300"
           >
             diana@matkava.com
-          </Link>
+          </AnimatedLink>
         </div>
 
         <div className="inline-flex flex-col justify-start items-start gap-2.5">
           <div className="justify-start text-zinc-500 text-sm">Contact Me:</div>
-          <Link
+          <AnimatedLink
             href="#contact"
-            className="justify-start text-base text-white whitespace-nowrap font-semibold underline uppercase hover:text-zinc-400 transition-all duration-300"
+            className="justify-start text-base text-white whitespace-nowrap font-semibold underline uppercase transition-all duration-300"
           >
             Contact Now
-          </Link>
+          </AnimatedLink>
         </div>
 
         <div className="inline-flex flex-col justify-start items-start gap-2.5">
@@ -78,7 +79,7 @@ function SubscribeForm() {
           placeholder="Email"
           className="w-full min-w-60 text-base h-10 px-4 py-3 bg-transparent rounded-2xl outline outline-1 outline-offset-[-0.50px] outline-neutral-500 inline-flex justify-start items-center overflow-hidden"
         />
-        <Button title="Submit" size="sm" color="white" type="submit">
+        <Button title="Submit" size="fit" color="white" type="submit">
           <FaPlay />
         </Button>
       </form>
@@ -95,60 +96,45 @@ function FooterPageLinks() {
 
       <ul className="grid grid-cols-2 gap-x-12 gap-y-2 text-base text-zinc-500 w-md">
         <li>
-          <Link
-            href="/"
-            title="Go to Home"
-            className="hover:text-white transition"
-          >
+          <AnimatedLink href="/" className="hover:text-white transition">
             Home
-          </Link>
+          </AnimatedLink>
         </li>
         <li>
-          <Link
+          <AnimatedLink
             href="/experience"
-            title="View my Experience"
             className="hover:text-white transition"
           >
             Experience
-          </Link>
+          </AnimatedLink>
         </li>
         <li>
-          <a
-            href="/about"
-            title="Learn more About me"
-            className="hover:text-white transition"
-          >
+          <AnimatedLink href="/about" className="hover:text-white transition">
             About
-          </a>
+          </AnimatedLink>
         </li>
         <li>
-          <Link
-            href="/contact"
-            title="Contact me"
-            className="hover:text-white transition"
-          >
+          <AnimatedLink href="/contact" className="hover:text-white transition">
             Contact
-          </Link>
+          </AnimatedLink>
         </li>
         <li>
-          <Link
+          <AnimatedLink
             href="/projects"
-            title="See my Projects"
             className="hover:text-white transition"
           >
             Projects
-          </Link>
+          </AnimatedLink>
         </li>
         <li>
-          <Link
+          <AnimatedLink
             href="/cv.pdf"
-            title="Download my CV"
             className="hover:text-white transition"
             rel="noopener"
             target="_blank"
           >
             View CV
-          </Link>
+          </AnimatedLink>
         </li>
       </ul>
     </nav>
@@ -173,20 +159,20 @@ function FooterPrivacyPolicy() {
         {/* Footer links (legal, social, whatever) */}
         <ul className="w-fit flex items-center gap-4 text-base text-white font-semibold">
           <li>
-            <Link
+            <AnimatedLink
               href="/terms-of-service"
               className="hover:underline whitespace-nowrap"
             >
               Terms of Service
-            </Link>
+            </AnimatedLink>
           </li>
           <li>
-            <Link
+            <AnimatedLink
               href="/privacy-policy"
               className="hover:underline whitespace-nowrap"
             >
               Privacy Policy
-            </Link>
+            </AnimatedLink>
           </li>
         </ul>
       </div>

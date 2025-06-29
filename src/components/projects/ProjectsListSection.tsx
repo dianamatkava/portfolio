@@ -6,6 +6,7 @@ export default function ProjectsListSection() {
     <section
       className="w-full h-full space-y-12"
       aria-labelledby="projects-title"
+      id="projects"
     >
       <h2
         className="flex flex-col justify-center items-center"

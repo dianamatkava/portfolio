@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { AnimatedLink } from "../shared/AnimatedLink";
 import { socialLinks } from "@app/data/main";
 
 export default function SocialMedias({
@@ -9,23 +9,19 @@ export default function SocialMedias({
   return (
     <div className="w-full inline-flex justify-start items-start gap-10">
       {socialLinks.map((social) => (
-        <Link
+        <AnimatedLink
           key={social.name}
           href={social.url}
           target="_blank"
+          lineHeight={1.5}
           rel="noopener noreferrer"
           className="inline-flex justify-start items-center gap-2 group"
         >
-          <social.icon
-            size={24}
-            className={`text-white group-hover:text-zinc-400 transition-all duration-300 ${colorClassName}`}
-          />
-          <span
-            className={`text-base text-white group-hover:text-zinc-400 font-medium transition-all duration-300 ${colorClassName}`}
-          >
+          <social.icon size={24} className={`text-white ${colorClassName}`} />
+          <span className={`text-base text-white font-medium`}>
             {social.name}
           </span>
-        </Link>
+        </AnimatedLink>
       ))}
     </div>
   );

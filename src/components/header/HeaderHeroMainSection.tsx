@@ -1,6 +1,10 @@
+"use client";
+
+import BlurText from "../shared/animations/BlurText";
 import Category from "../shared/Category";
 import DelimiterLine from "../shared/DelimiterLine";
 import SocialMedias from "../contacts/SocialMedias";
+import TypewriterText from "./TypewriterText";
 
 export default function HeaderHeroMainSection() {
   return (
@@ -26,7 +30,7 @@ export default function HeaderHeroMainSection() {
         <div className="w-3/5">
           <Category title="Socials:" />
         </div>
-        <SocialMedias colorClassName="text-zinc-500 group-hover:text-zinc-400" />
+        <SocialMedias colorClassName="text-zinc-500" />
       </div>
     </section>
   );
@@ -34,18 +38,25 @@ export default function HeaderHeroMainSection() {
 
 function HeroTitle({ id }: { id: string }) {
   return (
-    <div className="w-fit flex flex-col justify-start items-start gap-2 py-12">
-      <h1 className="flex flex-col justify-start" id={id}>
-        <span className="text-white text-[180px] font-extrabold leading-[175px]">
-          CREATIVE
-        </span>
-        <span className="text-neutral-500/50 text-[180px] font-extrabold leading-[175px]">
-          DEVELOPER
-        </span>
-      </h1>
-      <span className="self-stretch text-right justify-start text-zinc-500 text-sm leading-none">
-        # Diana Matkava / Web Developer
-      </span>
+    <div className="w-full flex flex-col justify-start items-start gap-2 py-12 relative">
+      <TypewriterText
+        title="Creative "
+        words={["Developer", "Engineer", "Freelancer"]}
+        titleClassName="uppercase text-white text-[180px] font-extrabold leading-[175px]"
+        wordsClassName="uppercase text-neutral-500/50 text-[180px] font-extrabold leading-[175px]"
+      />
+      <BlurText
+        text="# Diana Matkava / Web Developer"
+        delay={150}
+        animateBy="words"
+        direction="top"
+        animationFrom={{ filter: "blur(10px)", opacity: 0, y: -50 }}
+        animationTo={[{ filter: "blur(0px)", opacity: 1, y: 0 }]}
+        onAnimationComplete={() => {
+          console.log("Animation complete");
+        }}
+        className="absolute bottom-0 right-0 text-right justify-start text-zinc-500 text-sm leading-none"
+      />
     </div>
   );
 }

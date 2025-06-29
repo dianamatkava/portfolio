@@ -18,7 +18,6 @@ export default function ProjectCardBackArticle() {
           url('/about-me.jpg')
         `,
         backgroundBlendMode: "overlay",
-        backgroundColor: "rgba(0, 0, 0, 0.2)", // ← valid semi-transparent black
         backgroundSize: "cover",
         backgroundPositionX: "center",
         backgroundPositionY: "20%",
@@ -68,9 +67,9 @@ export default function ProjectCardBackArticle() {
             />
           </div>
         </div>
-        <div className="w-fit min-w-96 space-y-4 bg-zinc-900/60 px-8 py-4 rounded-lg shadow-lg">
+        <div className="w-fit min-w-96 space-y-4 bg-zinc-900/80 px-8 py-4 rounded-lg shadow-lg">
           <div className="self-stretch flex flex-col justify-start items-start gap-2">
-            <Category title="Tech stack" className="text-sm font-semibold" />
+            <Category title="Tech stack" className="text-xs font-semibold" />
             <ul className="self-stretch inline-flex justify-start items-start gap-7">
               <li className="justify-start text-zinc-300 text-base font-medium whitespace-nowrap">
                 Next.js
@@ -84,13 +83,13 @@ export default function ProjectCardBackArticle() {
             </ul>
           </div>
           <div className="self-stretch flex flex-col justify-start items-start gap-2">
-            <Category title="Date" className="text-sm font-semibold" />
+            <Category title="Date" className="text-xs font-semibold" />
             <span className="justify-start text-zinc-300 text-base font-medium">
               1 May 2025 - 10 May 2025
             </span>
           </div>
           <div className="self-stretch flex flex-col justify-start items-start gap-2">
-            <Category title="Client" className="text-sm font-semibold" />
+            <Category title="Client" className="text-xs font-semibold" />
             <span className="justify-start text-zinc-300 text-base font-medium">
               OtterWater Inc.
             </span>
@@ -104,56 +103,5 @@ export default function ProjectCardBackArticle() {
         </div>
       </div>
     </article>
-    // <div className="w-[505px] h-[492px] px-8 py-8 bg-black/90 rounded-tl-[5px] rounded-tr-[5px] outline outline-1 outline-offset-[-1px] outline-neutral-400 inline-flex flex-col justify-start items-start gap-2.5">
-    //   <div className="w-96 h-96 flex flex-col justify-between items-start">
-    //     <div className="self-stretch flex flex-col justify-start items-start gap-14">
-    //       <div className="self-stretch text-right justify-start text-white text-4xl font-extrabold uppercase leading-9">
-    //         Corporate Websites
-    //       </div>
-    //       <div className="self-stretch flex flex-col justify-start items-start gap-5">
-    //         <div className="self-stretch inline-flex justify-between items-center">
-    //           <div className="inline-flex flex-col justify-start items-start gap-[5px]">
-    //             <div className="self-stretch justify-start text-neutral-400 text-[10px] font-semibold uppercase">
-    //               Date
-    //             </div>
-    //             <div className="self-stretch justify-start text-zinc-300 text-base font-medium">
-    //               1 May 2025
-    //             </div>
-    //           </div>
-    //           <div className="inline-flex flex-col justify-start items-start gap-[5px]">
-    //             <div className="self-stretch justify-start text-neutral-400 text-[10px] font-semibold uppercase">
-    //               CLIENT
-    //             </div>
-    //             <div className="self-stretch justify-start text-zinc-300 text-base font-medium">
-    //               OtterWater Inc.
-    //             </div>
-    //           </div>
-    //           <div className="inline-flex flex-col justify-start items-start gap-[5px]">
-    //             <div className="self-stretch justify-start text-neutral-400 text-[10px] font-semibold uppercase">
-    //               location
-    //             </div>
-    //             <div className="self-stretch justify-start text-zinc-300 text-base font-medium">
-    //               OtterWater Inc.
-    //             </div>
-    //           </div>
-    //         </div>
-    //       </div>
-    //       <div className="self-stretch flex flex-col justify-start items-start gap-3.5">
-    //         <div className="self-stretch justify-start text-stone-300 text-base font-normal">
-    //           Lorem Ipsum is simply dummy text of the printing and typesetting
-    //           industry. Lorem Ipsum has been the industry. Lorem Lorem Ipsum is
-    //           simply dummy text
-    //         </div>
-    //         <div className="self-stretch justify-start text-stone-300 text-base font-normal">
-    //           Lorem Ipsum is simply dummy text of the printing and typesetting
-    //           industry. Lorem Ipsum has been the industry. Lorem Lorem Ipsum is
-    //           simply dummy text
-    //         </div>
-    //       </div>
-    //     </div>
-
-    //     </div>
-    //   </div>
-    // </div>
   );
 }
