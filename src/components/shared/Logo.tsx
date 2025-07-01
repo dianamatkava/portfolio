@@ -1,14 +1,12 @@
 import { AnimatedLink } from "./AnimatedLink";
-import Link from "next/link";
-import LogoSvg from "@/public/LogoSvg.svg";
 
 export default function Logo() {
   return (
     <AnimatedLink
       href="/"
-      className="w-fit flex justify-start items-center gap-1.5 cursor-pointer group"
+      className="w-full inline-flex justify-start items-center gap-1.5 cursor-pointer group"
     >
-      <div
+      {/* <div
         role="img"
         aria-label="Logo"
         className="group-hover:animate-spinSlow"
@@ -16,7 +14,7 @@ export default function Logo() {
         <svg
           width="19"
           height="20"
-          viewBox="0 0 19 20"
+          viewBox="0 0 45 45"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -30,9 +28,10 @@ export default function Logo() {
             stroke="black"
           />
         </svg>
-      </div>
-      <span className="justify-start text-white text-sm font-medium whitespace-nowrap">
-        Diana Matkava
+      </div> */}
+      <span className="w-full justify-start text-white text-lg font-medium whitespace-nowrap uppercase">
+        Diana
+        <span className="text-neutral-500">Matkava</span>
       </span>
     </AnimatedLink>
   );

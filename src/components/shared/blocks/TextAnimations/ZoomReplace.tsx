@@ -25,7 +25,7 @@ export const ZoomReplace = ({
           trigger: containerRef.current,
           start: "top top",
           end: "+=300%",
-          scrub: 1.5,
+          scrub: 1,
           pin: true,
         },
       });
@@ -33,7 +33,7 @@ export const ZoomReplace = ({
       tl.to(zoomRef.current, {
         scale: 60,
         opacity: 0,
-        transformOrigin: "center center",
+        transformOrigin: "47% 36%",
         ease: "power2.inOut",
       }).fromTo(
         revealRef.current,
@@ -49,7 +49,7 @@ export const ZoomReplace = ({
   return (
     <div
       ref={containerRef}
-      className="relative w-full text-white bg-black overflow-hidden"
+      className="relative w-full text-white overflow-hidden"
     >
       {/* ZOOM SECTION */}
       <div

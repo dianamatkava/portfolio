@@ -42,12 +42,12 @@ export default function AboutMeSection() {
 
             <div className="w-full text-justify text-zinc-400 text-base space-y-4">
               <p data-aos="fade-up">
-                Currently, at Fintiba GmbH, we're pushing the boundaries of
-                fintech innovation, leveraging my Python proficiency and
-                insights from a Bachelor's degree in Computer Science. With a
-                knack for backend development, I've honed my skills in Django
-                and FastAPI, ensuring robust server-side solutions that empower
-                our financial services platform to operate seamlessly.
+                Hi, I’m Diana — a Berlin-based Software Developer focused on
+                backend engineering. At Fintiba GmbH, I build scalable, secure
+                fintech systems using Python, Django, and FastAPI. I care about
+                clean architecture, performance, and developer experience, and
+                enjoy working in fast-paced teams where autonomy, clarity, and
+                real product impact matter.
               </p>
             </div>
           </div>

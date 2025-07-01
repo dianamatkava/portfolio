@@ -23,10 +23,10 @@ export default function HeaderHeroMainSection() {
           <Category title="Who am I:" />
         </div>
         <p className="text-zinc-500 text-base font-normal w-full">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-          ever since the 1500s, when an unknown printer took a galley of type
-          and scrambled it to make a type specimen book.
+          I’m a backend-focused Software Developer based in Berlin with a strong
+          foundation in architecture, performance optimization, and test-driven
+          development. I bring a balance of technical expertise and team-first
+          mindset — delivering clean, maintainable code
         </p>
       </div>
 
@@ -58,7 +58,7 @@ function HeroTitle({ id }: { id: string }) {
         data-aos="fade-left"
         data-aos-delay="400"
         data-aos-easing="ease-in-sine"
-        className="absolute bottom-0 right-0 text-right justify-start text-zinc-500 text-sm leading-none"
+        className="absolute bottom-0 right-0 text-right justify-start text-zinc-500 text-md leading-none"
       >
         # Diana Matkava / Web Developer
       </div>

@@ -17,7 +17,7 @@ module.exports = {
         96: "24rem",
       },
       fontFamily: {
-        primary: ["Plus Jakarta Sans", "ui-sans-serif", "system-ui"],
+        primary: ["Roboto", "ui-sans-serif", "system-ui"],
       },
       fontSize: {
         xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -27,6 +27,10 @@ module.exports = {
       },
       borderRadius: {
         lg: "0.75rem",
+      },
+      clipPath: {
+        "custom-shape":
+          "polygon(10% 0%, 100% 0%, 100% 100%, 90% 100%, 0% 100%, 0% 0%)",
       },
       keyframes: {
         scrollLeft: {
@@ -51,5 +55,14 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".clip-custom-shape": {
+          "clip-path":
+            "polygon(10% 0%, 100% 0%, 100% 100%, 90% 100%, 0% 100%, 0% 0%)",
+        },
+      });
+    },
+  ],
 };
